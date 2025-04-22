@@ -1,0 +1,173 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #181818; /* Dark background for body */
+  color: #f4f4f4; /* Light text color */
+  padding: 20px;
+}
+
+header {
+  background-color: #333; /* Dark header background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #f4f4f4; /* Light text for nav links */
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: rgb(29, 235, 98); /* Highlight nav links on hover with green */
+}
+
+.hero {
+  text-align: center;
+  background-color: #222; /* Dark background for hero section */
+  padding: 50px 20px;
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.resume-btn {
+  text-decoration: none;
+  background-color: rgb(29, 235, 98); /* Green button color */
+  color: #333; /* Dark text on the button */
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.resume-btn:hover {
+  background-color: rgb(29, 235, 98); /* Slightly darker button on hover */
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: rgb(29, 235, 98); /* Green color for section headings */
+  text-align: center;
+}
+
+section p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.project {
+  background-color: #222; /* Dark background for projects */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow */
+  flex: 1 1 calc(45% - 30px);
+  max-width: calc(45% - 30px);
+  text-align: center;
+}
+
+.project h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: rgb(29, 235, 98); /* Green color for project titles */
+}
+
+.project p {
+  font-size: 1.1em;
+  color: #ddd; /* Light grey text for project description */
+}
+
+a {
+  color: rgb(29, 235, 98); /* Green color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333; /* Dark footer background */
+  color: white;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+/* Styling for contact icons */
+#contact p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#contact i {
+  margin-right: 10px;
+  font-size: 1.5em;
+  color: rgb(29, 235, 98); /* Green color for icons */
+}
+
+a {
+  color: rgb(29, 235, 98); /* Green color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#contact a {
+  font-size: 1.1em;
+}
