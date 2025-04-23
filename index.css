@@ -27,6 +27,11 @@ header h1 {
 nav {
   text-align: center;
 }
+#about h2 {
+  color:white;
+  text-align: center;
+}
+
 
 nav a {
   margin: 0 15px;
@@ -66,34 +71,50 @@ nav a:hover {
 }
 
 .resume-btn:hover {
-  background-color: rgb(29, 235, 98); /* Slightly darker button on hover */
+  background-color: rgb(15, 245, 15); /* Slightly darker button on hover */
 }
 
-section {
-  margin-bottom: 60px;
-}
 
-section h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: rgb(29, 235, 98); /* Green color for section headings */
+#skills {
+  padding: 40px 20px;
   text-align: center;
 }
 
-section p {
-  font-size: 1.2em;
-  text-align: center;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
+.skill-card {
+  background-color: rgb(29, 235, 98);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
 }
 
-ul li {
-  margin-bottom: 15px;
-  font-size: 1.2em;
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 128, 0, 0.2);
+}
+
+.skill-card i {
+  font-size: 40px;
+  color:  #333;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+#projects {
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .project-container {
@@ -102,7 +123,12 @@ ul li {
   gap: 30px;
   flex-wrap: wrap;
   margin-top: 30px;
+
 }
+#project-title{
+  text-align: center;
+}
+
 
 .project {
   background-color: #222; /* Dark background for projects */
@@ -122,7 +148,7 @@ ul li {
 
 .project p {
   font-size: 1.1em;
-  color: #ddd; /* Light grey text for project description */
+  color: #ddd; 
 }
 
 a {
@@ -170,4 +196,34 @@ a:hover {
 
 #contact a {
   font-size: 1.1em;
+}
+.contact-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-btn {
+  display:inline-block ;
+  margin: 5px;
+  padding: 10px 15px;
+  background-color:  rgb(29, 235, 98);
+  color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn i {
+  margin-right: 8px;
+}
+
+.contact-btn:hover {
+  background-color:rgb(15, 245, 15);
+}
+
+.contact-title {
+  color: rgb(29, 235, 98);
+  font-weight: bold;
+  margin-bottom: 10px;
 }
